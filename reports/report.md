@@ -107,7 +107,7 @@ As a result of comparison of different metric for beforementioned models, PureSV
 
 The process involved 5-fold cross-validation, where the dataset was divided into five parts. Each part was used once as a test set while the rest served as the training set. This method ensures that every data point contributes to both training and testing, enhancing the models' reliability.
 
-The models implemented include the PopularModel, PureSVDModel, RandomModel, and ImplicitKNNModel, each designed with distinct recommendation strategies. Additionally, we conducted experiments with the LightFM model, testing different numbers of factors to find the optimal setup.
+The models implemented include the PopularModel, PureSVDModel, RandomModel, and ImplicitItemKNNWrapperModel, each designed with distinct recommendation strategies. Additionally, we conducted experiments with the LightFM model, testing different numbers of factors to find the optimal setup.
 
 Throughout this process, we adhered to the guidelines provided in the rectools library documentation, ensuring a standardized approach to fitting the data to each model. This section lays the groundwork for the subsequent evaluation of the models' performance.
 
