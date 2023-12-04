@@ -7,7 +7,7 @@ from rectools.metrics import NDCG, Accuracy, MAP, Recall, MeanInvUserFreq, Seren
 from sklearn.metrics import mean_squared_error
 from rectools.dataset import Dataset
 
-data_interim_dir = './data/'
+data_interim_dir = 'benchmark/data/'
 user_groups = ['ua', 'ub']
 data_splits = ['base', 'test']
 
@@ -39,7 +39,7 @@ for user_group in user_groups:
 
         datasets[user_group][split] = (dataset, interactions_df)
 
-with open("../models/best_model.pickle", 'rb') as f:
+with open("./models/best_model.pickle", 'rb') as f:
     best_model = pickle.load(f)
 
 k = 10
